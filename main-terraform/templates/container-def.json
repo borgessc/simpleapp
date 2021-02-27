@@ -1,0 +1,21 @@
+[
+    {
+      "name": "green-lantern",
+      "image": "141729888478.dkr.ecr.ap-southeast-2.amazonaws.com/my-test-repo:latest",
+      "cpu": 10,
+      "memory": 256,
+      "essential": true,
+      "portMappings": [
+        {
+          "containerPort": 80
+        }
+      ],
+      "logConfiguration": {
+        "logDriver": "awslogs",
+        "options": { 
+          "awslogs-group" : "/ecs/frontend-container",
+          "awslogs-region": "ap-southeast-2"
+        }
+      }
+    }
+]
