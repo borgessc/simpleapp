@@ -14,5 +14,8 @@ RUN yarn install
 # Bundle app source
 COPY . /app
 
-EXPOSE 3000
+EXPOSE 80
+EXPOSE 443
+
 CMD [ "node", "src/server.js" ]
+  

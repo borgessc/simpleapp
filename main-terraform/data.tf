@@ -18,7 +18,7 @@ data "aws_ami" "amazon_linux" {
   owners = ["amazon", "self"]
 }
 
-data "aws_vpc" "main" {
+# data "aws_vpc" "main" {
 
-  id = var.vpc_id
-}
+#   id = var.vpc_id
+# }

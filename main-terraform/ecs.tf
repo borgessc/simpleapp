@@ -7,11 +7,15 @@ resource "aws_ecs_cluster" "web-cluster" {
   }
 }
 
+resource "aws_iam_service_linked_role" "ecs" {
+  aws_service_name = "ecs.amazonaws.com"
+}
+
 resource "aws_ecs_capacity_provider" "test" {
   name = "capacity-provider-test"
   auto_scaling_group_provider {
     auto_scaling_group_arn         = aws_autoscaling_group.asg.arn
-    managed_termination_protection = "ENABLED"
+    managed_termination_protection = "DISABLED"
 
     managed_scaling {
       status          = "ENABLED"

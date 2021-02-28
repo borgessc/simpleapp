@@ -3,7 +3,6 @@ variable "region" {
   type        = string
   
 }
-
 variable "environment" {
   description = "Describe the environment that will be used to deploy a resource"
   type        = string
@@ -35,3 +34,4 @@ variable "vpc_id" {
   type = string
   
 }
+
