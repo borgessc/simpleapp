@@ -235,7 +235,8 @@ The Application should be running at the ALB (Application Load balance) URL
 
 ``E.g http://test-ecs-lb-1386905905.ap-southeast-2.elb.amazonaws.com/``
 
-![image](https://user-images.githubusercontent.com/5950117/109584988-bb04f400-7b56-11eb-86e0-fd950a44234a.png)
+![image](https://user-images.githubusercontent.com/5950117/109585130-04edda00-7b57-11eb-9f0f-c839f6036236.png)
+
 
 
 ## Destroy the environment 
