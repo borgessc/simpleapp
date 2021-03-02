@@ -226,7 +226,12 @@ AWS_PROFILE=user-root-test terraform init
 AWS_PROFILE=user-root-test terraform plan -var-file=ap-southeast-2.tfvars
 
 AWS_PROFILE=user-root-test terraform apply -var-file=ap-southeast-2.tfvars
+
 ```
+
+The Application should be running at the ALB (Application Load balance) URL 
+
+``E.g http://test-ecs-lb-1386905905.ap-southeast-2.elb.amazonaws.com/``
 
 ## Destroy the environment 
 
