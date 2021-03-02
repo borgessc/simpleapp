@@ -228,6 +228,9 @@ AWS_PROFILE=user-root-test terraform plan -var-file=ap-southeast-2.tfvars
 AWS_PROFILE=user-root-test terraform apply -var-file=ap-southeast-2.tfvars
 
 ```
+![image](https://user-images.githubusercontent.com/5950117/109585328-7168d900-7b57-11eb-86e7-bfd9e292a993.png)
+
+
 
 The Application should be running at the ALB (Application Load balance) URL 
 ![image](https://user-images.githubusercontent.com/5950117/109585052-da038600-7b56-11eb-9b73-fa2225920f79.png)
