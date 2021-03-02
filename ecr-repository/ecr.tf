@@ -12,7 +12,6 @@ resource "aws_ecr_repository" "default" {
   }
 }
 
-
 resource "aws_ecr_lifecycle_policy" "default" {
   count = var.attach_lifecycle_policy ? 1 : 0
 

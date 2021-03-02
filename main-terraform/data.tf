@@ -15,10 +15,10 @@ data "aws_ami" "amazon_linux" {
     name   = "virtualization-type"
     values = ["hvm"]
   }
-  owners = ["amazon", "self"]
+  owners = ["amazon"]
 }
 
-# data "aws_vpc" "main" {
+data "aws_vpc" "main" {
 
-#   id = var.vpc_id
-# }
+  id = var.vpc_id
+}

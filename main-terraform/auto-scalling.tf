@@ -1,7 +1,7 @@
 resource "aws_launch_configuration" "lc" {
-  name          = "test_ecs"
+  name          = var.launch-config
   image_id      = data.aws_ami.amazon_linux.id
-  instance_type = "t2.micro"
+  instance_type = var.instance_type
   lifecycle {
     create_before_destroy = true
   }

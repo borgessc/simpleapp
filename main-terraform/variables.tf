@@ -24,14 +24,23 @@ variable "owner-resource" {
 }
 
 variable "public_subnets" {
-    description = "All Internet face Subnets"
+    description    = "All Internet face Subnets"
     type           = list
     default        = []
 }
 
 variable "vpc_id" {
   description = "Include the id from the main VPC"
-  type = string
+  type        = string
   
 }
 
+variable "launch-config" {
+  description = "Name of launch configuration"
+  type        = string
+}
+
+variable "instance_type" {
+  default = "t2.micro"
+  
+}
