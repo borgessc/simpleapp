@@ -230,8 +230,13 @@ AWS_PROFILE=user-root-test terraform apply -var-file=ap-southeast-2.tfvars
 ```
 
 The Application should be running at the ALB (Application Load balance) URL 
+![image](https://user-images.githubusercontent.com/5950117/109585052-da038600-7b56-11eb-9b73-fa2225920f79.png)
+
 
 ``E.g http://test-ecs-lb-1386905905.ap-southeast-2.elb.amazonaws.com/``
+
+![image](https://user-images.githubusercontent.com/5950117/109584988-bb04f400-7b56-11eb-86e0-fd950a44234a.png)
+
 
 ## Destroy the environment 
 
